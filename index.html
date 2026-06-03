@@ -13,16 +13,16 @@
     <div class="header-inner">
       <a href="index.html" class="logo">Brew & Gather</a>
 
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <a href="index.html" aria-current="page">Home</a>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="about.html">Our Story</a></li>
           <li><a href="contact.html">Visit Us</a></li>
         </ul>
       </nav>
 
-      <button class="menu-toggle">
+      <button class="menu-toggle" aria-label="Open menu">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="6" x2="21" y2="6"/>
           <line x1="3" y1="12" x2="21" y2="12"/>
@@ -43,7 +43,7 @@
         <a href="/menu.html" class="btn">See our menu</a>
       </div>
       
-      <img src="images/hero.jpg" class="hero-image">
+      <img src="images/hero.png" class="hero-image" alt="Coffee cup and pastries on a cafe table">
     </div>
 
     <div class="section">
@@ -76,7 +76,7 @@
     <div class="section section--warm">
       <div class="container two-col">
 
-        <img src="images/interior.jpg" class="interior-photo">
+        <img src="images/interior.png" class="interior-photo" alt="Warm interior of Brew and Gather coffee shop">
         <div class="story-text">
           <h4>Our story</h4>
           <p>Brew &amp; Gather started in 2019 as a small pop-up in the Glebe neighbourhood of Ottawa. We wanted to create a space that felt less like a transaction and more like a ritual — a reason to pause, connect, and be present.</p>
@@ -99,9 +99,14 @@
             <h4>Send us a message</h4>
             
             <form class="contact-form">
-              <input type="text" placeholder="Your name">
-              <input type="email" placeholder="Your email">
-              <textarea placeholder="Your message" rows="4"></textarea>
+             <label for="name">Your name</label>
+              <input id="name" type="text">
+
+              <label for="email">Your email</label>
+              <input id="email" type="email">
+
+              <label for="message">Your message</label>
+              <textarea id="message" rows="4"></textarea>
               <div class="btn-submit">Send message</div>
             </form>
           </div>
@@ -117,14 +122,14 @@
   <div class="site-footer">
     <div class="footer-inner">
       <p class="footer-tagline">Brew &amp; Gather Coffee Co. &mdash; Ottawa, ON</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="about.html">Our Story</a></li>
-          <li><a href="contact.html">Visit Us</a></li>
-        </ul>
-      </nav>
+      <nav aria-label="Footer navigation">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="contact.html">Visit Us</a></li>
+    </ul>
+    </nav>
       <p class="footer-copy">&copy; 2026 Brew &amp; Gather Coffee Co.</p>
     </div>
   </div>
